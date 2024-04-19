@@ -1,25 +1,36 @@
-import logo from './logo.svg';
+
 import './App.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import MyComponent from './Pages/Api';
+import  getAllEmployees  from './Pages/Api';
+import { useEffect, useState } from 'react';
+import Table from './Pages/Table';
+import AddEmployeeForm from './Pages/AddEmployee';
+import axios from 'axios';
+import { Link } from 'react-router-dom';
+import CustomRoute from './Pages/Route';
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+  
+   
+
+    
+    return (
+        
+            <div className='wrapper m-5'>
+                 <CustomRoute></CustomRoute>
+                
+               
+                
+                
+            </div>
+            
+        
+    );
 }
+
+
 
 export default App;
